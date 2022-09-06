@@ -1,0 +1,48 @@
+.fp{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px;
+    z-index: 1;
+    gap: 20px;
+}
+
+.fp__container{
+    flex: 1;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+    cursor: pointer;  
+}
+
+.fp__image{
+    width: 100%;
+    border-radius:5px;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.fp__name{
+    font-weight: 700;
+}
+.fp__city{
+    color: gray;
+}
+
+.fp__price{
+    font-weight: 600;
+}
+
+.fp__rating>button{
+    background-color: #003580;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}

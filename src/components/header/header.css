@@ -1,0 +1,127 @@
+.header{
+    background-color: #003580;
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header__container{
+    width: 100%;
+    max-width: 1024px;
+    margin: 20px 0px 80px 0px;
+}
+.header__container.list__mode{
+    margin: 20px 0px 0px 0px;
+}
+.header__list{
+    display: flex;
+    margin-bottom: 20px;
+    gap: 40px;
+
+}
+.header__list__item{
+    margin: 5px 10px ;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__list__item.active{
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px; 
+}
+
+.header__description{
+    margin: 20px 0px ;
+}
+
+.header__button{
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header__search{
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;align-items: center;
+    justify-content: space-around;
+    padding: 20px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.header__search__icon{
+    color: lightgray;
+}
+
+.header__search__box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__search__input{
+    border: none;
+    outline: none;
+}
+
+.header__search__text{
+    color: lightgray;
+
+}
+.date__picker{
+    position: absolute;
+    top: 40px;
+    z-index: 2;
+}
+
+.options{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    -webkit-box-shadow:2px 2px 4px rgb(221, 216, 216), -2px -2px 4px rgb(221, 216, 216) ;
+    box-shadow: 2px 2px 4px rgb(221, 216, 216), -2px -2px 4px rgb(221, 216, 216) ;
+    padding: 10px;
+    background-color: white;
+    
+}
+
+.option__item{
+    display: flex;
+    color: rgb(133, 131, 131);
+    justify-content: space-between;
+    padding: 5px 0px ;
+}
+
+.option__counter{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.option__btn{
+    background:none;
+    padding: 2px 5px;
+    border: none;
+    border:1px solid lightblue;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.option__btn:disabled{
+    cursor: not-allowed;
+}
